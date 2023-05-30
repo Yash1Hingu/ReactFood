@@ -1,4 +1,5 @@
 import classes from './AvailableMeals.module.css';
+import Card from '../UI/Card'
 const DUMMY_MEALS = [
     {
         id: 'm1',
@@ -32,9 +33,13 @@ const AvailableMeals = () => {
         </li>
     );
 
-    return <ul>
-        {meals}
-    </ul>
+    return (
+        <Card>
+            <ul>
+                {meals}
+            </ul>
+        </Card>
+    )
 }
 
 export default AvailableMeals;
