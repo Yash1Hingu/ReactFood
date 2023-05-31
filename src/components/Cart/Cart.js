@@ -1,0 +1,29 @@
+import classes from './Cart.module.css';
+const DUMMY_CARTITEMS = [
+    {
+        id: 'c1',
+        name: 'panner ticka',
+        amount: 2,
+        price: 12.22
+    }
+]
+const Cart = props => {
+    const cartItems = DUMMY_CARTITEMS.map(item => <li>{item.name}</li>)
+    return (
+        <div>
+            <ul className={classes['cart-items']}>
+                {cartItems}
+            </ul>
+            <span className={classes.total}>
+                <span>Total Amount</span>
+                <span>39.55</span>
+            </span>
+            <span className={classes.actions}>
+                <button className={classes['button--alt']}>Close</button>
+                <button className={classes.button}>Order</button>
+            </span>
+        </div>
+    )
+}
+
+export default Cart;
