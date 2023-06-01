@@ -20,7 +20,7 @@ const Cart = props => {
                 <span>39.55</span>
             </span>
             <span className={classes.actions}>
-                <button className={classes['button--alt']}>Close</button>
+                <button className={classes['button--alt']} onClick={props.onClose}>Close</button>
                 <button className={classes.button}>Order</button>
             </span>
         </Modal>
