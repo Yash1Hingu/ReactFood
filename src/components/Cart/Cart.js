@@ -11,7 +11,7 @@ const DUMMY_CARTITEMS = [
 const Cart = props => {
     const cartItems = DUMMY_CARTITEMS.map(item => <li>{item.name}</li>)
     return (
-        <Modal>
+        <Modal onClose={props.onClose}>
             <ul className={classes['cart-items']}>
                 {cartItems}
             </ul>
