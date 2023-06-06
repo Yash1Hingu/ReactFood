@@ -1,0 +1,35 @@
+.cartitem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+    padding: 10px;
+    border-bottom: 2px solid #800000;
+}
+.cartitem-name{
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+.cartitem-price{
+    font-size: 1.2rem;
+    color: #800000;
+}
+.cartitem-control{
+    margin-left: auto;
+}
+.cartitem-amount{
+    align-self:flex-end;
+    padding: 5px 8px;
+    font-weight: 800;
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+.cartitem-btn > button{
+    padding: 2px 15px;
+    border: 1px solid #800000;
+    border-radius: 5px;
+    font-weight: 800;
+    margin: 3px;
+    background-color: transparent;
+    color: #800000;
+}
