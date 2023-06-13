@@ -13,6 +13,10 @@ const CartItem = props => {
             price: props.price
         })
     }
+
+    const removeCartHandler = () => {
+        cartCtx.removeItem(props.id);
+    }
     return (
         <div className={classes.cartitem}>
             <div className={classes['cartitem-name']}>
@@ -26,7 +30,7 @@ const CartItem = props => {
             </div>
             <div className={classes['cartitem-control']}>
                 <div className={classes['cartitem-btn']}>
-                    <button className={classes['remove-btn']}>{'-'}</button>
+                    <button className={classes['remove-btn']} onClick={removeCartHandler}>{'-'}</button>
                     <button className={classes['add-btn']} onClick={addCartHandler}>{'+'}</button>
                 </div>
             </div>
