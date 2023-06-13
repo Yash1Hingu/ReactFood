@@ -7,6 +7,7 @@ const MealsForm = props => {
 
     const submitHandler = event => {
         event.preventDefault();
+        setinputIsvaild(true);
         const enterAmount = +(EnterAmountRef.current.value);
         
         if (enterAmount < 1 | enterAmount > 5) {
