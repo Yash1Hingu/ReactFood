@@ -11,7 +11,7 @@ const Cart = props => {
         setcartIsEmpty(false);
     }
 
-    const cartItems = cartCtx.items.map(item => <CartItem name={item.name} amount={item.amount} price={item.price}/>)
+    const cartItems = cartCtx.items.map(item => <CartItem id={item.id} name={item.name} amount={item.amount} price={item.price}/>)
     return (
         <Modal onClose={props.onClose}>
             <ul className={classes['cart-items']}>
